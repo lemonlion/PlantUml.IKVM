@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <PackageProjectUrl>https://github.com/lemonlion/PlantUml.IKVM</PackageProjectUrl>
     <Description>Generate images from PlantUml in .Net. This is a light wrapper around the PlantUml Java (jar) file (MIT version), using the IKVM Java runtime.</Description>
     <Title>PlantUml IKVM</Title>
@@ -14,6 +14,16 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="PlantUml\plantuml-mit-1.2024.6.jar" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="PlantUml\plantuml-mit-1.2024.6.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="IKVM" Version="8.9.1" />
