@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IKVM" Version="8.9.1" />
+    <PackageReference Include="IKVM.Image" Version="8.9.1" />
+    <PackageReference Include="IKVM.Image.JDK" Version="8.9.1" />
+    <PackageReference Include="IKVM.Image.JRE" Version="8.9.1" />
+    <PackageReference Include="IKVM.MSBuild" Version="8.9.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <IkvmReference Include="PlantUml\plantuml-mit-1.2024.6.jar">
+      <Debug>true</Debug>
+    </IkvmReference>
+  </ItemGroup>
+
+</Project>
